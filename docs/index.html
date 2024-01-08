@@ -1,13 +1,48 @@
----
-title: home
----
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <h1>{{ "Hello World!" | downcase }}</h1>
-  </body>
+<head>
+  <title>anfive</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    p {
+      margin: 10px;
+      padding: 0 20px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    
+    @media (max-width: 600px) {
+      p {
+        font-size: 14px;
+      }
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>On `anfive`</h1>
+  <p>
+    `anfive` was written after `five` had been completed, so I had an idea that there might be potential limitations regarding what Google 
+    allows apps to do. Jetpack Compose maps nicely to SwiftUI and vice versa, so having everything laid out in one project made a rewrite 
+    trivial; however, I began with research, to save myself some time. Android does not have a built-in equivalent to Shortcuts and 
+    personal automations, so that immediately was deflating. I would have to implement it myself, and it seemed more obscure than 
+    the code-obfuscation I would have had to do for `five`. So I had the opposite problem: I could switch apps freely, but there was no clear 
+    way to go about having the app be triggered on the opening of the desired app without rewriting the entire Shortcuts infrastructure.
+    One future possibility is to make use of existing apps that handle such functionality, like Tasker, but I currently don't use an Android 
+    phone, so I don't have a need to do so. It's not clear if the opening of an app constitutes a valid Tasker event either.
+  </p>
+  <ul>
+  </ul>
+    
+</body>
 </html>
